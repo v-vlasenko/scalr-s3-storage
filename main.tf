@@ -9,7 +9,7 @@ terraform {
 }
 
 resource "null_resource" "test" {
-  count=3
+  count=5
   triggers = {
     always_run = timestamp()
   }
